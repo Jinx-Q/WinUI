@@ -28,9 +28,18 @@ namespace WinUI
             this.InitializeComponent();
         }
 
-        private void myButton_Click(object sender, RoutedEventArgs e)
+        private async void WinUI_Click(object sender, RoutedEventArgs e)
         {
-            myButton.Content = "Clicked";
+            var welcomeDialog = new ContentDialog()
+            {
+                Title = "Hello from Hello Kita",
+                Content = "Welcome to my first Windows App SDK app",
+                CloseButtonText = "OK, Goood!",
+                XamlRoot = WinUI_Learn.XamlRoot
+
+            };
+            await welcomeDialog.ShowAsync();
+            ///myButton.Content = "Clicked";
         }
     }
 }
