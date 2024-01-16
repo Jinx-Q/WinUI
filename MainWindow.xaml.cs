@@ -33,8 +33,8 @@ namespace WinUI
             var welcomeDialog = new ContentDialog()
             {
                 Title = "Hello from Hello Kita",
-                Content = "Welcome to my first Windows App SDK app",
-                CloseButtonText = "OK, Goood!",
+                Content = "Welcome to my first Windows App SDK app, 20240116",
+                CloseButtonText = "OK, Goood!!!",
                 XamlRoot = WinUI_Learn.XamlRoot
 
             };
